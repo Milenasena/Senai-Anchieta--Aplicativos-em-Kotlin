@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Cabecalho("Milena Cristina")
+                    Cabecalho("Milena Cristina" , cargo= "Estudante")
                 }
             }
         }
@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Cabecalho(nomeCompleto: String) {
+fun Cabecalho(nomeCompleto: String, cargo: String) {
     Text(text = "Hello $nomeCompleto!")
 }
 
@@ -39,6 +39,7 @@ fun Cabecalho(nomeCompleto: String) {
 @Composable
 fun DefaultPreview() {
     MyApplicationTheme {
-        Cabecalho("Milena")
+        Cabecalho("Milena" , cargo = "Estudante")
+
     }
 }
