@@ -30,8 +30,8 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Cabecalho(name: String) {
-    Text(text = "Hello $name!")
+fun Cabecalho(nomeCompleto: String) {
+    Text(text = "Hello $nomeCompleto!")
 }
 
 
