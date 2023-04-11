@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Cabecalho("Milena Cristina" , cargo= "Estudante")
+                    Cabecalho("Milena Cristina" , "Estudante")
                 }
             }
         }
@@ -39,7 +39,7 @@ fun Cabecalho(nomeCompleto: String, cargo: String) {
 @Composable
 fun DefaultPreview() {
     MyApplicationTheme {
-        Cabecalho("Milena" , cargo = "Estudante")
+        Cabecalho("Milena" , "Estudante")
 
     }
 }
